@@ -1,4 +1,4 @@
-from .base_colors import color_to_letter, get_colors_rgb
+from .base_colors import color_to_letter
 
 
 def distance(rgb1, rgb2):
@@ -6,7 +6,8 @@ def distance(rgb1, rgb2):
 
 
 def nearest(rgb, colors):
-    distances = [distance(rgb, rgb2) for rgb2 in get_colors_rgb(colors)]
+    colors_rgb = [el[2] for el in colors]
+    distances = [distance(rgb, rgb2) for rgb2 in colors_rgb]
     for i in range(len(distances)):
         if distances[i] == min(distances):
             return colors[i][2]

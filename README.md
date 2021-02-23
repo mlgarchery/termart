@@ -2,19 +2,32 @@
 
 Converting  very small images (or text) to terminal art (bash file that echo colors), like so: 
 
-![](console.PNG)
+![](console.png)
 
-from file `example_data/first_licorn.txt`, first line :
+generated from file `example_data/first_licorn.txt` :
 ```
 dddwwwwwwwdwww
 ddwwdddddwwwddwdddddddddddbwr
-dwwdbbbbbdwdjdwdddddddddddbwr
-wwdbbdddbbdjjdw
-wdbbbdwwdddjdww
-wdbbvdwdwwwddw
-wdbvvvdwwdwwdwdddddddddddgdgdg
-wdbvvdwwdddwdwwddddddddddgdgdd
-wdvvvdwwwwdwwdwwwwwddddddgggdg
+dwwdbbbbbdwdydwdddddddddddbwr
+wwdbbdddbbdyydw
+wdbbbdwwdddydww
+wdbbmdwdwwwddw
+wdbmmmdwwdwwdwdddddddddddgdgdg
+wdbmmdwwdddwdwwddddddddddgdgdd
+wdmmmdwwwwdwwdwwwwwddddddgggdg
+wdmmrdwwwwwwwdwwdddwwddddgdgdg
+wwdrrdwwdddddwwdbbbdwddddgdgdg
+dwdrrdwwwdwwwwdbmmbdw
+dwwdrdwwwwdddddmmmmdw
+ddwwddwwwwwwwwwdrrmdww
+dddwwdwwwwwwwwwwddrrdw
+ddddwdwwwwwwwwwwdwdrdw
+ddddwdwwddddddwwdwwddw
+ddddwdwwdwwwwdwwdwwwww
+ddddwdwwdwddwdwwdw
+ddddwdccdwddwdccdw
+ddddwddddwddwddddw
+ddddwwwwwwddwwwwww
 ```
 ## 8 standard ANSI colors https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
@@ -22,7 +35,7 @@ First focus on the default linux terminal capabilities (targeting Ubuntu).
 
 ### Installation and usage 
 
-Do `poetry install` then
+Do `poetry install`, `poetry shell` then:
 ```
 python -m termart licorn.png
 ```

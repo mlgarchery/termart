@@ -1,4 +1,4 @@
-from .linux_colors import letter_to_color_number
+from .base_colors import letter_to_color_number
 
 
 def convert(txt_filename, bash_filename):

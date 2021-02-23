@@ -1,28 +1,18 @@
+# Different convenient color data structures for our usage
+
 # 8 colors definitions
-# ubuntu default terminal color, and one letter shorthand
+# ubuntu default terminal color, and linux colors number
 colors = [
-    ["black", "d", (0, 0, 0)],
-    ["red", "r", (221, 0, 203)],
-    ["green", "g", (10, 159, 0)],
-    ["yellow", "y", (185, 167, 26)],
-    ["blue", "b", (0, 23, 120)],
-    ["magenta", "m", (94, 8, 131)],
-    ["cyan", "c", (0, 140, 242)],
-    ["white", "w", (241, 241, 241)]
+    ["red",     "r",    (221, 0, 203),      1],
+    ["green",   "g",    (10, 159, 0),       2],
+    ["yellow",  "y",    (185, 167, 26),     3],
+    ["blue",    "b",    (0, 23, 120),       4],
+    ["magenta", "m",    (94, 8, 131),       5],
+    ["cyan",    "c",    (0, 140, 242),      6],
+    ["white",   "w",    (241, 241, 241),    15],
+    ["black",   "d",    (0, 0, 0),          256],
 ]
 
+color_to_letter = {el[2]: el[1] for el in colors}
 
-def get_colors_rgb(colors):
-    return [el[2] for el in colors]
-
-
-color_to_letter = {
-    el[2]: el[1] for el in colors
-}
-# palette contains R ints contiguously followed by G ints and R ints
-palette = []
-for i in range(3):
-    channel = []
-    for color in colors:
-        channel.append(color[2][i])
-    palette.extend(channel)
+letter_to_color_number = {el[1]: el[3] for el in colors}
