@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "termart"
+version = "0.1.0"
+description = "converting pixel art to txt and bash"
+authors = ["Martial Garchery <martial.garchery@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+Pillow = "^8.1.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

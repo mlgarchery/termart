@@ -1,0 +1,1 @@
+for i in {1..300}; do echo -e "\e[48;5;${i}m${i}\e[0m\c"; done;
