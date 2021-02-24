@@ -2,7 +2,7 @@
 
 Converting  very small images (or text) to terminal art (bash file that echo colors), like so: 
 
-![](console.png)
+![](console_output.png)
 
 generated from file `example_data/first_licorn.txt` :
 ```
@@ -43,17 +43,19 @@ python -m termart licorn.png
 this will create a ddata.txt containing txt pixels, as mapped in file termart/base_colors.py :
 ```
 colors = [
-    ["black", "d", (0, 0, 0)],
-    ["red", "r", (221, 0, 203)],
-    ["green", "g", (10, 159, 0)],
-    ["yellow", "y", (185, 167, 26)],
-    ["blue", "b", (0, 23, 120)],
-    ["magenta", "m", (94, 8, 131)],
-    ["cyan", "c", (0, 140, 242)],
-    ["white", "w", (241, 241, 241)]
+    ["red",     "r",    (221, 0, 203),      1],
+    ["green",   "g",    (10, 159, 0),       2],
+    ["yellow",  "y",    (185, 167, 26),     3],
+    ["blue",    "b",    (0, 23, 120),       4],
+    ["magenta", "m",    (94, 8, 131),       5],
+    ["cyan",    "c",    (0, 140, 242),      6],
+    ["white",   "w",    (241, 241, 241),    15],
+    ["black",   "d",    (0, 0, 0),          256],
 ]
 ```
-It will also populate drawing.sh and show you what executing it looks like in the console
+It will also populate `drawing.sh` and show you what executing it looks like in the console:
+
+![](console_output2.png)
 
 ### More
 ```
