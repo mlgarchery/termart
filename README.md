@@ -35,12 +35,25 @@ First focus on the default linux terminal capabilities (targeting Ubuntu).
 
 ### Installation and usage 
 
-Do `poetry install`, `poetry shell` then:
+For development
+
+Do `poetry install`, `poetry shell`.
+
+or you can install the package (to download from this repo):
+```
+pip install termart-0.1.0-py3-none-any.whl
+# or
+poetry add ./termart-0.1.0-py3-none-any.whl
+# or
+pipenv install termart-0.1.0-py3-none-any.whl
+```
+
+Then:
 ```
 python -m termart licorn.png
 ```
 
-this will create a ddata.txt containing txt pixels, as mapped in file termart/base_colors.py :
+this will create a ddata.txt containing textual pixels (r g y b m c w d), as mapped in file termart/base_colors.py :
 ```
 colors = [
     ["red",     "r",    (221, 0, 203),      1],
