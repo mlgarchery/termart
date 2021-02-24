@@ -55,7 +55,7 @@ colors = [
 ```
 It will also populate `drawing.sh` and show you what executing it looks like in the console:
 
-![](console_output2.png)
+![](console_output2.PNG)
 
 ### More
 ```
